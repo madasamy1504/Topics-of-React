@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-import UseState1 from "./UseSate1";
+import UseSateObject from "./UseSateObject";
+import UseStateArray from "./UseStateArray";
 
 function Usestateparent(){
 
     return(
         <div>
-            <UseState1/>
+            <UseSateObject/>
+            <UseStateArray/>
         </div>
     )
 }

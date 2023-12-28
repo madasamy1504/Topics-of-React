@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function UseState1(){
+function UseSateObject(){
     const[number,Setnumber] = useState(0);
     const[CanditateDetails,SetDetails] = useState({
         name:"Madasamy",
@@ -21,7 +21,7 @@ function UseState1(){
         <div>
             {/* ========= Simple ========= */}
             {/* Start */}
-            <h1>Simple Usage of UseState</h1>
+            <h1>Simple Usage of UseState with object</h1>
             {number}<br></br>
 
             <button onClick={()=>{Setnumber(number+1)}}>Click me to add</button>
@@ -40,16 +40,12 @@ function UseState1(){
             {CanditateDetails.nested.NextlevelNest.Details1}<br></br>
             
             <button onClick={SetDetailsHandler}>Change name</button>
-            <button onClick={()=>{SetDetails({...CanditateDetails,age:18})}}>Change age</button>
+            <button onClick={()=>{SetDetails({...CanditateDetails,age:CanditateDetails.age + 1})}}>Change age</button>
             <button onClick={()=>{SetDetails({...CanditateDetails,nested:{...CanditateDetails.nested,Details:"Nested Data Changed",NextlevelNest:{...CanditateDetails.nested.NextlevelNest,Details1:"Next Level Data Changed"}}})}}>Change nest and Next level nest</button>
             {/* End */}
             {/* ========= Medium & Complex ========= */}
-
-
-
-
         </div>
     )
 }
 
-export default UseState1;
+export default UseSateObject;
