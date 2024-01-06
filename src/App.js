@@ -1,15 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 import Usestateparent from './Hooks/UseState/Usestateparent';
-import UseEffect from './Hooks/UseEffect/UseEffect';
 import Useref from './Hooks/UseRef/Useref.js';
+import USeEffectParent from './Hooks/UseEffect/USeEffectParent.js';
+import UseMemoParent from './Hooks/UseMemo/UseMemoParent.js';
 
 function App() {
   return (
     <div className="App">
+
+     <br></br><hr></hr>
      <Usestateparent/>
-     <UseEffect/>
+     <br></br><hr></hr><br></br>
+
+     <hr></hr>
+     <USeEffectParent/>
+     <br></br><hr></hr><br></br>
+
+     <hr></hr>
      <Useref/>
+     <br></br><hr></hr><br></br>
+
+     <hr></hr>
+    <UseMemoParent/>
+     <br></br><hr></hr><br></br>
+
     </div>
   );
 }

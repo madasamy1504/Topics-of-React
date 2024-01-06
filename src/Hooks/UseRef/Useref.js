@@ -15,12 +15,15 @@ const Useref = () => {
     };
 
     const getEle = (el) => {
+        new Date().getMilliseconds()
         Colochange.current.push(el);
         console.log(Colochange);
     }
-    console.log(Colochange);
+    console.log(Colochange,new Date().getMilliseconds());
     return(
         <div>
+            <h1>3.UseRef</h1>
+            {new Date().getMilliseconds()}
             <div ref={getEle}>Change my color</div><br></br>
             <div ref={getEle}>Change my color</div><br></br>
             <button onClick={colorChanger}>Chnage color1</button>

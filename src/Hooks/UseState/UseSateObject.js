@@ -21,7 +21,7 @@ function UseSateObject(){
         <div>
             {/* ========= Simple ========= */}
             {/* Start */}
-            <h1>Simple Usage of UseState with object</h1>
+            <h2>Simple Usage of UseState with object</h2>
             {number}<br></br>
 
             <button onClick={()=>{Setnumber(number+1)}}>Click me to add</button>
@@ -34,7 +34,7 @@ function UseSateObject(){
 
             {/* ========= Medium & Complex ========= */}
             {/* Start */}
-            <h1>Usage of UseState by object along with conditional rendering</h1>
+            <h2>Usage of UseState by object along with conditional rendering</h2>
             {CanditateDetails.name} {CanditateDetails.age}<br></br>
             {CanditateDetails.nested.Details}<br></br>
             {CanditateDetails.nested.NextlevelNest.Details1}<br></br>
