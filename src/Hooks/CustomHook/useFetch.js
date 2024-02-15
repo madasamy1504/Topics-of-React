@@ -3,15 +3,19 @@ import {useState,useEffect} from "react";
 
 const useFetch = (url) => {
     const [data,SetData] = useState(null);
+    useEffect(()=>{
+        fetch(url)
+        .then((res)=>res.json())
+        .then((res)=>SetData(res))
+
+    },[url])
+
+   
+
+        
+    return [data];
     
-        let a = () =>{
-            fetch(url)
-        .then((res) => res.json())
-        .then((data) => SetData(data));
-        }
-        a();
     
-    return data;
 };
 export default useFetch;
 
